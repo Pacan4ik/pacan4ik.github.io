@@ -1,0 +1,47 @@
+.logo-css {
+    width: 70px;
+    height: 70px;
+}
+
+.logo-leaves {
+    margin-top: 3px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 13px;
+    outline: 3px solid #1D583C;
+    border-radius: 50%;
+}
+
+.branch {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 32px;
+    background-color: #1D583C;
+    width: 3px;
+    height: 30px;
+}
+
+.branch::before {
+    content: "";
+    display: inherit;
+    outline: 3px solid #1D583C;
+    border-radius: 50%;
+    width: 20px;
+    height: 45px;
+    margin-top: -18px;
+    margin-left: 3px;
+    clip-path: polygon(-30% -10%, 54% -10%, 54% 56%, -10% 55%);
+}
+
+.branch::after {
+    content: "";
+    display: inherit;
+    outline: 3px solid #1D583C;
+    border-radius: 50%;
+    width: 20px;
+    height: 40px;
+    margin-top: -40px;
+    margin-left: -20px;
+    clip-path: polygon(50% -10%, 100% -20%, 120% 56%, 50% 55%);
+}
