@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Тест</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/test.css" rel="stylesheet">
     <link href="css/logo.css" rel="stylesheet">
+    <link href="css/words.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="icon" href="img/site-logo.png" type="image/x-icon">
@@ -33,18 +33,17 @@
 </header>
 <div id="main">
     <div class="inner">
-        <div class="test-container">
-            <div class="workspace">
-                <div class="content" id="button-list">
-                    <button class="question-btn" id="question-button" name="Вопрос">Вопрос</button>
-                    <div class="content" id="notification"></div>
+        <div class="container">
+            <div id="block3" class="block drag-container"></div>
+            <div class="row-wrapper">
+                <div id="block2" class="block drag-container"></div>
+                <div id="block1" class="block">
+                    <div class="column-wrapper">
+                        <input class="input" type="text" id="inputText" placeholder="Введите слова">
+                        <div id="wordsContainer" class="words-container"></div>
+                    </div>
+                    <button class="button" id="buttonParse">Разобрать</button>
                 </div>
-                <div class="content" id="question-list"></div>
-                <div class="content" id="answer-list"></div>
-            </div>
-            <div class="content" id="result-container">
-                <h2>Результат</h2>
-                <div class="content" id="stat-box"></div>
             </div>
         </div>
     </div>
@@ -88,6 +87,6 @@
         </div>
     </div>
 </footer>
-<script src="js/test.js"></script>
+<script src="js/words.js"></script>
 </body>
 </html>

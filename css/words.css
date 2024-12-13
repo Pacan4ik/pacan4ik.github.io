@@ -1,0 +1,110 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.block {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9fdff;
+}
+
+#block3 {
+    min-height: 10vh;
+    position: relative;
+    flex: 1 1 100%;
+    height: 100px;
+}
+
+#block2 {
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 50%;
+}
+
+#block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 50%;
+    gap: 10px;
+}
+
+.button {
+    width: 15%;
+    height: 3em;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.1s linear;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button:hover {
+    background: #f3f3f3;
+}
+
+.button:active {
+    background: #e3e3e3;
+}
+
+.input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.words-container {
+    background-color: #ffffff;
+    min-height: 2em;
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.drag-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.word-item {
+    width: fit-content;
+    min-width: 8em;
+    height: fit-content;
+    padding: 10px 20px;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    outline: 1px solid;
+}
