@@ -5,15 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Курсовая</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header-style.css">
     <link rel="stylesheet" href="css/startpage.css">
     <meta name="description" content="">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/brand.css" rel="stylesheet">
     <link href="css/logo.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="icon" href="img/site-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/level1.css">
+    <link rel="stylesheet" href="css/level2.css">
+    <link rel="stylesheet" href="css/level3.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+
 
     <meta property="og:title" content="">
     <meta property="og:type" content="">
@@ -47,16 +53,23 @@
 </header>
 <br>
 <div id="body-game">
-    <div class="container">
-        <h1>Уравновесь весы 🎮</h1>
+    <div class="container" id="userinput-container">
+        <h1>Уравновесь весы <i id="name-icon" class="fa-solid fa-scale-unbalanced"></i></h1>
         <input type="text" id="username-input" placeholder="Введите имя">
         <br>
-        <button id="start-btn" onclick="startGame()">Старт</button>
-        <button id="leader-btn" onclick="viewLeaderboard()">Таблица лидеров</button>
+        <button class="animated-btn" id="start-btn" onclick="startGame()">Старт</button>
+        <button class="animated-btn" id="leader-btn" onclick="viewLeaderboard()">Таблица лидеров</button>
     </div>
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/main-anim.js"></script>
+<script src="js/level1.js"></script>
+<script src="js/level2.js"></script>
+<script src="js/level3.js"></script>
+<script src="js/config/game-config.js"></script>
+
+<script src="js/debug.js"></script>
 </body>
 
 </html>
